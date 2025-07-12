@@ -1,0 +1,188 @@
+ERROR - 2025-04-26 20:03:04 --> Error connecting to the database: mysqli_sql_exception: Host '77.237.185.231' is not allowed to connect to this MySQL server in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('mysql7.serv00.c...', 'm6995_portfolio', Object(SensitiveParameterValue), 'm6995_portfolio...', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host '77.237.185.231' is not allowed to connect to this MySQL server in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-26 20:03:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Host '77.237.185.231' is not allowed to connect to this MySQL server
+[Method: GET, Route: /]
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 467.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uri`
+WHERE `uri` = :uri:
+ LIMIT 1', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-26 20:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-26 20:04:40 --> Error connecting to the database: mysqli_sql_exception: Host '77.237.185.231' is not allowed to connect to this MySQL server in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('mysql7.serv00.c...', 'm6995_portfolio', Object(SensitiveParameterValue), 'm6995_portfolio...', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host '77.237.185.231' is not allowed to connect to this MySQL server in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-26 20:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Host '77.237.185.231' is not allowed to connect to this MySQL server
+[Method: GET, Route: /]
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 467.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uri`
+WHERE `uri` = :uri:
+ LIMIT 1', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-26 20:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-26 20:05:21 --> Error connecting to the database: mysqli_sql_exception: The requested address is not valid in its context in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('https://mysql7....', 'm6995_portfolio', Object(SensitiveParameterValue), 'm6995_portfolio...', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: The requested address is not valid in its context in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-26 20:05:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: The requested address is not valid in its context
+[Method: GET, Route: /]
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 467.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uri`
+WHERE `uri` = :uri:
+ LIMIT 1', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-26 20:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 20:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-26 21:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

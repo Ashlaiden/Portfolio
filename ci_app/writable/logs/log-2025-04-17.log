@@ -1,0 +1,1388 @@
+ERROR - 2025-04-17 09:09:06 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#9 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#13 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#14 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#19 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#20 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#5 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#8 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#13 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#14 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 {main}
+CRITICAL - 2025-04-17 09:09:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `projects`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\View\Cell.php(289): App\Libraries\Header->load([])
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', [], 'App\\Libraries\\Header')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\Header::load', [], 0, 'AppLibrariesHeaderload40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\base\base.php(17): view_cell('\\App\\Libraries\\Header::load')
+ 9 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\app\\Views\\base\\base.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('base/base', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(13): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-17 09:09:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#9 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#13 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#14 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#19 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#20 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#5 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#8 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#13 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#14 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 {main}
+CRITICAL - 2025-04-17 09:09:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `projects`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\View\Cell.php(289): App\Libraries\Header->load([])
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', [], 'App\\Libraries\\Header')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\Header::load', [], 0, 'AppLibrariesHeaderload40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\base\base.php(17): view_cell('\\App\\Libraries\\Header::load')
+ 9 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\app\\Views\\base\\base.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('base/base', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(13): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-17 09:09:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#9 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#13 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#14 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#19 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#20 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#5 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#8 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#13 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#14 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 {main}
+CRITICAL - 2025-04-17 09:09:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `projects`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\View\Cell.php(289): App\Libraries\Header->load([])
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', [], 'App\\Libraries\\Header')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\Header::load', [], 0, 'AppLibrariesHeaderload40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\base\base.php(17): view_cell('\\App\\Libraries\\Header::load')
+ 9 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\app\\Views\\base\\base.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('base/base', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(13): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-17 09:09:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#9 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#13 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#14 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#19 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#20 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#5 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#8 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#13 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#14 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 {main}
+CRITICAL - 2025-04-17 09:09:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `projects`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\View\Cell.php(289): App\Libraries\Header->load([])
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', [], 'App\\Libraries\\Header')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\Header::load', [], 0, 'AppLibrariesHeaderload40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\base\base.php(17): view_cell('\\App\\Libraries\\Header::load')
+ 9 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\app\\Views\\base\\base.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('base/base', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(13): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-17 09:09:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#5 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#9 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#13 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#14 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#19 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#20 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+#4 D:\xampp\htdocs\portfolio\app\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', Array)
+#5 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load(Array)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', Array, 'App\\Libraries\\H...')
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesHea...')
+#8 D:\xampp\htdocs\portfolio\app\Views\base\base.php(17): view_cell('\\App\\Libraries\\...')
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', Array, true)
+#12 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#13 D:\xampp\htdocs\portfolio\app\Controllers\Home.php(13): view('home', Array)
+#14 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#15 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#18 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 {main}
+CRITICAL - 2025-04-17 09:09:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1678): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `projects`', null, false)
+ 3 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->countAll()
+ 4 APPPATH\Libraries\Header.php(10): CodeIgniter\Model->__call('countAll', [])
+ 5 SYSTEMPATH\View\Cell.php(289): App\Libraries\Header->load([])
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', [], 'App\\Libraries\\Header')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\Header::load', [], 0, 'AppLibrariesHeaderload40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\base\base.php(17): view_cell('\\App\\Libraries\\Header::load')
+ 9 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\app\\Views\\base\\base.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('base/base', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(13): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-17 09:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-17 09:38:55 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(140): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(869381)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-17 09:38:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 09:38:55 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b5aba49sm46941445e9.39 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b5aba49sm46941445e9.39 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b5aba49sm46941445e9.39 - gsmtp
+
+ERROR - 2025-04-17 09:38:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 09:38:55 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b5aba49sm46941445e9.39 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b5aba49sm46941445e9.39 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b5aba49sm46941445e9.39 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b5aba49sm46941445e9.39 - gsmtp
+
+CRITICAL - 2025-04-17 17:09:38 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(796071)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:23:42 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(228379)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:23:43 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(755860)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:23:44 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(538884)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:23:44 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(982978)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:23:44 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(610327)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:25:07 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(606295)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:25:09 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(307583)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:25:47 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(252231)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:25:48 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(350793)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:25:49 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(480539)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-17 17:25:50 --> TypeError: str_contains(): Argument #1 ($haystack) must be of type string, null given
+[Method: GET, Route: admin/testmail]
+in SYSTEMPATH\Email\Email.php on line 753.
+ 1 SYSTEMPATH\Email\Email.php(753): str_contains(null, ',')
+ 2 SYSTEMPATH\Email\Email.php(556): CodeIgniter\Email\Email->stringToArray(null)
+ 3 APPPATH\Controllers\Admin\Auth.php(135): CodeIgniter\Email\Email->setTo(null)
+ 4 APPPATH\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(386201)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-17 17:26:03 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(141): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(886164)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-17 17:26:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:26:03 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4d12b5sm62180185e9.10 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b4d12b5sm62180185e9.10 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b4d12b5sm62180185e9.10 - gsmtp
+
+ERROR - 2025-04-17 17:26:04 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:26:04 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4d12b5sm62180185e9.10 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b4d12b5sm62180185e9.10 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b4d12b5sm62180185e9.10 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4d12b5sm62180185e9.10 - gsmtp
+
+ERROR - 2025-04-17 17:26:20 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(141): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(765979)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-17 17:26:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:26:20 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-440699454ccsm5541675e9.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-440699454ccsm5541675e9.7 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-440699454ccsm5541675e9.7 - gsmtp
+
+ERROR - 2025-04-17 17:26:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:26:20 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-440699454ccsm5541675e9.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-440699454ccsm5541675e9.7 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-440699454ccsm5541675e9.7 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-440699454ccsm5541675e9.7 - gsmtp
+
+ERROR - 2025-04-17 17:28:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:28:52 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39efa5a2300sm202723f8f.101 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa5a2300sm202723f8f.101 - gsmtp
+
+ERROR - 2025-04-17 17:28:53 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:28:53 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39efa5a2300sm202723f8f.101 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa5a2300sm202723f8f.101 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa5a2300sm202723f8f.101 - gsmtp
+
+ERROR - 2025-04-17 17:29:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:29:56 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4d33a6sm63555515e9.15 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4d33a6sm63555515e9.15 - gsmtp
+
+ERROR - 2025-04-17 17:29:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:29:57 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4d33a6sm63555515e9.15 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4d33a6sm63555515e9.15 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4d33a6sm63555515e9.15 - gsmtp
+
+ERROR - 2025-04-17 17:30:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:30:28 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39efa420816sm263436f8f.15 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa420816sm263436f8f.15 - gsmtp
+
+ERROR - 2025-04-17 17:30:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:30:29 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39efa420816sm263436f8f.15 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa420816sm263436f8f.15 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa420816sm263436f8f.15 - gsmtp
+
+ERROR - 2025-04-17 17:32:09 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(141): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(437603)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:32:09 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:32:09 --> 
+ERROR - 2025-04-17 17:32:11 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(143): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(437603)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:32:11 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:32:11 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:32:58 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(141): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(389795)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:32:58 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:32:58 --> 
+ERROR - 2025-04-17 17:33:00 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(143): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(389795)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:33:00 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:33:00 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:33:14 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(141): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(988141)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:33:14 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:33:14 --> 
+ERROR - 2025-04-17 17:33:16 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(143): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(988141)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:33:16 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:33:16 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:33:31 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(141): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(549966)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:33:31 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:33:31 --> 
+ERROR - 2025-04-17 17:33:34 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\xampp\\htdocs...', 1764)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1764): mail('armandesktop520...', '=?UTF-8?Q?=F0=9...', '<html><body>You...', 'Date: Thu, 17 A...', '-f ashtinworksp...')
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(143): CodeIgniter\Email\Email->send()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(549966)
+#6 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-17 17:33:34 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:33:34 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:34:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:34:34 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39efa4332f8sm260573f8f.40 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa4332f8sm260573f8f.40 - gsmtp
+
+ERROR - 2025-04-17 17:34:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 17:34:35 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39efa4332f8sm260573f8f.40 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa4332f8sm260573f8f.40 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39efa4332f8sm260573f8f.40 - gsmtp
+
+ERROR - 2025-04-17 18:06:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 18:06:14 --> 220 s0.serv00.com ESMTP Exim Thu, 17 Apr 2025 20:06:11 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-17 18:06:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 18:06:20 --> 220 s0.serv00.com ESMTP Exim Thu, 17 Apr 2025 20:06:11 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-17 18:08:05 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 18:08:05 --> 220 s0.serv00.com ESMTP Exim Thu, 17 Apr 2025 20:08:02 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-17 18:08:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 18:08:11 --> 220 s0.serv00.com ESMTP Exim Thu, 17 Apr 2025 20:08:02 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-17 19:51:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 19:51:29 --> 220 s13.serv00.com ESMTP Exim Thu, 17 Apr 2025 21:51:28 +0200
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+from: 550 You are not allowed to send e-mails as the domain: ecample.com
+
+The following SMTP error was encountered: 550 You are not allowed to send e-mails as the domain: ecample.com
+
+quit: 221 s13.serv00.com closing connection
+
+ERROR - 2025-04-17 19:51:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 19:51:32 --> 220 s13.serv00.com ESMTP Exim Thu, 17 Apr 2025 21:51:28 +0200
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+from: 550 You are not allowed to send e-mails as the domain: ecample.com
+
+The following SMTP error was encountered: 550 You are not allowed to send e-mails as the domain: ecample.com
+
+quit: 221 s13.serv00.com closing connection
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+220 s13.serv00.com ESMTP Exim Thu, 17 Apr 2025 21:51:31 +0200
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+from: 550 You are not allowed to send e-mails as the domain: ecample.com
+
+The following SMTP error was encountered: 550 You are not allowed to send e-mails as the domain: ecample.com
+
+quit: 221 s13.serv00.com closing connection
+
+ERROR - 2025-04-17 20:14:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-17 20:14:46 --> 220 s13.serv00.com ESMTP Exim Thu, 17 Apr 2025 22:14:45 +0200
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s13.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+from: 550 You are not allowed to send e-mails as the domain: yourdomain.com
+
+The following SMTP error was encountered: 550 You are not allowed to send e-mails as the domain: yourdomain.com
+
+quit: 221 s13.serv00.com closing connection
+
+DEBUG - 2025-04-17 21:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-17 21:37:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/login/verify]
+in APPPATH\Controllers\Admin\Auth.php on line 109.
+ 1 APPPATH\Controllers\Admin\Auth.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\portfolio\\app\\Controllers\\Admin\\Auth.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-17 21:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 21:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-17 21:56:42 --> TypeError: Unsupported operand types: bool | string
+[Method: GET, Route: admin/login/verify]
+in APPPATH\Controllers\Admin\Auth.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->verify()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-17 22:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-17 22:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

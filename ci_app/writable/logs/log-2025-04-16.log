@@ -1,0 +1,849 @@
+CRITICAL - 2025-04-16 17:43:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/login.php"
+[Method: POST, Route: admin/login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/login.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/login', [], true)
+ 3 APPPATH\Controllers\Admin\Auth.php(54): view('admin/login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 17:48:08 --> ParseError: syntax error, unexpected token "if", expecting "," or ";"
+[Method: POST, Route: admin/login]
+in APPPATH\Controllers\Admin\Auth.php on line 33.
+ 1 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\xampp\\htdocs\\portfolio\\vendor\\composer/../../app\\Controllers\\Admin\\Auth.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\Admin\\Auth')
+ 3 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin\\Auth', true)
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-16 18:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-16 18:19:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/login.php"
+[Method: POST, Route: admin/login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/login.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/login', [], true)
+ 3 APPPATH\Controllers\Admin\Auth.php(33): view('admin/login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-16 18:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-16 18:21:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/admin/login.php"
+[Method: POST, Route: admin/login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/login.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('/admin/login', [], true)
+ 3 APPPATH\Controllers\Admin\Auth.php(33): view('/admin/login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-16 18:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-16 18:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-16 18:42:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:42:07 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c123sm18374155f8f.36 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c123sm18374155f8f.36 - gsmtp
+
+ERROR - 2025-04-16 18:42:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:42:07 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c123sm18374155f8f.36 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c123sm18374155f8f.36 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c123sm18374155f8f.36 - gsmtp
+
+ERROR - 2025-04-16 18:42:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:42:18 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c0d9sm18189709f8f.32 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c0d9sm18189709f8f.32 - gsmtp
+
+ERROR - 2025-04-16 18:42:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:42:19 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c0d9sm18189709f8f.32 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c0d9sm18189709f8f.32 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c0d9sm18189709f8f.32 - gsmtp
+
+ERROR - 2025-04-16 18:46:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:46:57 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c03dsm17420484f8f.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c03dsm17420484f8f.24 - gsmtp
+
+ERROR - 2025-04-16 18:46:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:46:57 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c03dsm17420484f8f.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c03dsm17420484f8f.24 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c03dsm17420484f8f.24 - gsmtp
+
+ERROR - 2025-04-16 18:49:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:49:25 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4d352esm28430635e9.16 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4d352esm28430635e9.16 - gsmtp
+
+ERROR - 2025-04-16 18:49:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:49:25 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4d352esm28430635e9.16 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4d352esm28430635e9.16 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4d352esm28430635e9.16 - gsmtp
+
+ERROR - 2025-04-16 18:49:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:49:57 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4c8056sm28846475e9.2 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4c8056sm28846475e9.2 - gsmtp
+
+ERROR - 2025-04-16 18:49:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:49:57 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b4c8056sm28846475e9.2 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4c8056sm28846475e9.2 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b4c8056sm28846475e9.2 - gsmtp
+
+ERROR - 2025-04-16 18:50:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:50:02 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae979637sm18098372f8f.53 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae979637sm18098372f8f.53 - gsmtp
+
+ERROR - 2025-04-16 18:50:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:50:02 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae979637sm18098372f8f.53 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae979637sm18098372f8f.53 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae979637sm18098372f8f.53 - gsmtp
+
+ERROR - 2025-04-16 18:50:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:50:07 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96407esm17960941f8f.17 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96407esm17960941f8f.17 - gsmtp
+
+ERROR - 2025-04-16 18:50:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 18:50:08 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96407esm17960941f8f.17 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96407esm17960941f8f.17 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96407esm17960941f8f.17 - gsmtp
+
+ERROR - 2025-04-16 19:03:14 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(140): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(755986)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-16 19:03:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:03:14 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:03:14 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2025-04-16 19:03:16 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:03:16 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:03:14 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-16 19:04:50 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(140): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(287860)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-16 19:04:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:04:50 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:04:49 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2025-04-16 19:04:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:04:52 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:04:49 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-16 19:05:57 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(140): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(788492)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-16 19:05:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:05:57 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:05:56 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+ERROR - 2025-04-16 19:05:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:05:59 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:05:56 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+starttls: 503 STARTTLS command used when not advertised
+
+The following SMTP error was encountered: 503 STARTTLS command used when not advertised
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-16 19:06:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:06:45 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:06:41 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-16 19:06:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:06:51 --> 220 s0.serv00.com ESMTP Exim Wed, 16 Apr 2025 21:06:41 +0200
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250-STARTTLS
+250 HELP
+
+starttls: 220 TLS go ahead
+
+hello: 250-s0.serv00.com Hello localhost [77.237.186.160]
+250-SIZE 209715200
+250-LIMITS MAILMAX=1000 RCPTMAX=50000
+250-8BITMIME
+250-DSN
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH LOGIN PLAIN
+250-CHUNKING
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2025-04-16 19:17:33 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(140): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(461800)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-16 19:17:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:17:33 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae97c243sm18028569f8f.59 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae97c243sm18028569f8f.59 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae97c243sm18028569f8f.59 - gsmtp
+
+ERROR - 2025-04-16 19:17:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:17:34 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae97c243sm18028569f8f.59 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae97c243sm18028569f8f.59 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae97c243sm18028569f8f.59 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae97c243sm18028569f8f.59 - gsmtp
+
+ERROR - 2025-04-16 19:20:18 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(140): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(678532)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-16 19:20:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:20:18 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c684sm18028811f8f.33 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae96c684sm18028811f8f.33 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae96c684sm18028811f8f.33 - gsmtp
+
+ERROR - 2025-04-16 19:20:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:20:19 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-39eae96c684sm18028811f8f.33 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae96c684sm18028811f8f.33 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError ffacd0b85a97d-39eae96c684sm18028811f8f.33 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-39eae96c684sm18028811f8f.33 - gsmtp
+
+ERROR - 2025-04-16 19:20:43 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php:1918
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'D:\\xampp\\htdocs...', 1918)
+#1 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1918): stream_socket_enable_crypto(Resource id #134, true, 121)
+#2 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(140): CodeIgniter\Email\Email->send()
+#6 D:\xampp\htdocs\portfolio\app\Controllers\Admin\Auth.php(124): App\Controllers\Admin\Auth->sendVerificationCode(451882)
+#7 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Auth->testEmail()
+#8 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\portfolio\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\portfolio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-16 19:20:43 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:20:43 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b58cc4csm29832765e9.25 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b58cc4csm29832765e9.25 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b58cc4csm29832765e9.25 - gsmtp
+
+ERROR - 2025-04-16 19:20:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-04-16 19:20:44 --> 220 smtp.gmail.com ESMTP 5b1f17b1804b1-4405b58cc4csm29832765e9.25 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [77.237.186.160]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b58cc4csm29832765e9.25 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError 5b1f17b1804b1-4405b58cc4csm29832765e9.25 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4405b58cc4csm29832765e9.25 - gsmtp
+
