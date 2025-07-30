@@ -1,0 +1,1258 @@
+DEBUG - 2025-07-30 07:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 07:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 08:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:36:59 --> Error: Cannot call constructor
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Controllers\Admin\Editor.php on line 23.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(903): App\Controllers\Admin\Editor->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 09:42:29 --> CSRF token verified.
+DEBUG - 2025-07-30 09:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:42:50 --> ErrorException: Undefined variable $meta_title
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\viewmanager.php on line 4.
+ 1 APPPATH\Views\admin\viewmanager.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meta_title', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php', 4)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 5 APPPATH\Controllers\Admin\Editor.php(86): view('admin/viewmanager', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:46:14 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:48:04 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:48:06 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:50:23 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:50:25 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 09:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:52:03 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:56:07 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:56:10 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:56:12 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:56:12 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 09:56:13 --> Error: Call to undefined function admin_url()
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\base\navbar.php on line 14.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include()
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/base/navbar', [], true)
+ 4 APPPATH\Views\admin\viewmanager.php(10): view('admin/base/navbar')
+ 5 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 6 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 8 APPPATH\Controllers\Admin\Editor.php(88): view('admin/viewmanager', [...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 09:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 10:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 10:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 10:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 12:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 12:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 12:48:45 --> CSRF token verified.
+DEBUG - 2025-07-30 12:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 12:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 12:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 12:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 13:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 14:58:53 --> ErrorException: Undefined variable $meta_title
+[Method: GET, Route: admin/html-editor/edit/home]
+in APPPATH\Views\admin\edit_view.php on line 4.
+ 1 APPPATH\Views\admin\edit_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meta_title', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php', 4)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/edit_view', [], true)
+ 5 APPPATH\Controllers\Admin\Editor.php(110): view('admin/edit_view', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->editView('home')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 14:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 14:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 14:59:32 --> ErrorException: Undefined variable $pages
+[Method: GET, Route: admin/html-editor/edit/home]
+in APPPATH\Views\admin\edit_view.php on line 14.
+ 1 APPPATH\Views\admin\edit_view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php', 14)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/edit_view', [], true)
+ 5 APPPATH\Controllers\Admin\Editor.php(110): view('admin/edit_view', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->editView('home')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 15:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 15:00:23 --> ErrorException: Undefined variable $pages
+[Method: GET, Route: admin/html-editor/edit/home]
+in APPPATH\Views\admin\edit_view.php on line 14.
+ 1 APPPATH\Views\admin\edit_view.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php', 14)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/edit_view', [], true)
+ 5 APPPATH\Controllers\Admin\Editor.php(110): view('admin/edit_view', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->editView('home')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 15:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 15:00:46 --> ErrorException: Undefined variable $page
+[Method: GET, Route: admin/html-editor/edit/home]
+in APPPATH\Views\admin\edit_view.php on line 26.
+ 1 APPPATH\Views\admin\edit_view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php', 26)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\edit_view.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/edit_view', [], true)
+ 5 APPPATH\Controllers\Admin\Editor.php(110): view('admin/edit_view', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->editView('home')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 15:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 15:46:01 --> ErrorException: unlink(D:\xampp\htdocs\portfolio\ci_app\writable\debugbar/debugbar_1753888045.551406.json): No such file or directory
+[Method: GET, Route: /]
+in VENDORPATH\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\debugbar/debugbar_1753888045.551406.json): No such file or directory', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 VENDORPATH\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php(82): unlink('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\debugbar/debugbar_1753888045.551406.json')
+ 3 VENDORPATH\codeigniter4\framework\system\Debug\Toolbar.php(517): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1753890355.730023', 20)
+ 4 VENDORPATH\codeigniter4\framework\system\Debug\Toolbar.php(496): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 VENDORPATH\codeigniter4\framework\system\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 15:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 15:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:05:50 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: GET, Route: admin/dashboard]
+in VENDORPATH\codeigniter4\framework\system\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\vendor\\codeigniter4\\framework\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 VENDORPATH\codeigniter4\framework\system\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(697): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '192.168.1.2')
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Filters\ViewLogger.php(19): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+10 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 16:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:05:52 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: GET, Route: admin/html-editor/edit/home]
+in VENDORPATH\codeigniter4\framework\system\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\vendor\\codeigniter4\\framework\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 VENDORPATH\codeigniter4\framework\system\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(697): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '192.168.1.2')
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Filters\ViewLogger.php(19): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+10 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/edit/home', 'before')
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 16:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:08:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/preview/home', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 16:10:40 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/preview/home', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 16:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 16:11:13 --> CSRF token verified.
+DEBUG - 2025-07-30 16:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:11:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "<?= $this->extend('base/base') ?>
+
+<?= $this->section('meta_title') ?><?= esc($meta_title) ?><?= $this->endsection() ?>
+
+<?php $this->section('content') ?>
+
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 p-2 shadow-lg rounded">
+            <!-- <img class="img-fluid" src="<?= base_url("static/image/home.jpg") ?>" alt=""> -->
+            <div class="bg-image hover-overlay">
+                <img src="<?= base_url("static/image/main/home.jpg") ?>" alt="Programming is an Art Form!"
+                    class="img-fluid w-100" />
+                <div class="mask" style="
+              background: linear-gradient(
+                  45deg,
+                  hsla(168, 85%, 52%, 0.5),
+                  hsla(263, 88%, 45%, 0.5) 100%
+              );"></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="text-center mt-4 display-4">
+                <code class="text-dark">RAMTIN GANJI POUR</code>
+            </h1>
+            <hr class="border-1 border-dark opacity-100">
+            <div class="text-center">
+                <code class="text-dark h5">Computer Engineering Student</code>
+            </div>
+        </div>
+    </div>
+</main>
+<hr class="border-1 border-dark opacity-100">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Address: </span>
+                Iran, Mazandaran, Sari
+            </blockquote>
+        </div>
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Email: </span>
+                ganjipourramin@gmail.com
+            </blockquote>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4 mb-5">
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-telegram hover-custom"></i></a>
+        </div>
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-linkedin-in hover-custom"></i></a>
+        </div>
+    </div>
+</div>
+
+<?php $this->endSection() ?>.php"
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Exceptions\FrameworkException.php on line 39.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('<?= $this->extend(\'base/base\') ?>
+
+<?= $this->section(\'meta_title\') ?><?= esc($meta_title) ?><?= $this->endsection() ?>
+
+<?php $this->section(\'content\') ?>
+
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 p-2 shadow-lg rounded">
+            <!-- <img class="img-fluid" src="<?= base_url("static/image/home.jpg") ?>" alt=""> -->
+            <div class="bg-image hover-overlay">
+                <img src="<?= base_url("static/image/main/home.jpg") ?>" alt="Programming is an Art Form!"
+                    class="img-fluid w-100" />
+                <div class="mask" style="
+              background: linear-gradient(
+                  45deg,
+                  hsla(168, 85%, 52%, 0.5),
+                  hsla(263, 88%, 45%, 0.5) 100%
+              );"></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="text-center mt-4 display-4">
+                <code class="text-dark">RAMTIN GANJI POUR</code>
+            </h1>
+            <hr class="border-1 border-dark opacity-100">
+            <div class="text-center">
+                <code class="text-dark h5">Computer Engineering Student</code>
+            </div>
+        </div>
+    </div>
+</main>
+<hr class="border-1 border-dark opacity-100">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Address: </span>
+                Iran, Mazandaran, Sari
+            </blockquote>
+        </div>
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Email: </span>
+                ganjipourramin@gmail.com
+            </blockquote>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4 mb-5">
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-telegram hover-custom"></i></a>
+        </div>
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-linkedin-in hover-custom"></i></a>
+        </div>
+    </div>
+</div>
+
+<?php $this->endSection() ?>.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('<?= $this->extend(\'base/base\') ?>
+
+<?= $this->section(\'meta_title\') ?><?= esc($meta_title) ?><?= $this->endsection() ?>
+
+<?php $this->section(\'content\') ?>
+
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 p-2 shadow-lg rounded">
+            <!-- <img class="img-fluid" src="<?= base_url("static/image/home.jpg") ?>" alt=""> -->
+            <div class="bg-image hover-overlay">
+                <img src="<?= base_url("static/image/main/home.jpg") ?>" alt="Programming is an Art Form!"
+                    class="img-fluid w-100" />
+                <div class="mask" style="
+              background: linear-gradient(
+                  45deg,
+                  hsla(168, 85%, 52%, 0.5),
+                  hsla(263, 88%, 45%, 0.5) 100%
+              );"></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="text-center mt-4 display-4">
+                <code class="text-dark">RAMTIN GANJI POUR</code>
+            </h1>
+            <hr class="border-1 border-dark opacity-100">
+            <div class="text-center">
+                <code class="text-dark h5">Computer Engineering Student</code>
+            </div>
+        </div>
+    </div>
+</main>
+<hr class="border-1 border-dark opacity-100">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Address: </span>
+                Iran, Mazandaran, Sari
+            </blockquote>
+        </div>
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Email: </span>
+                ganjipourramin@gmail.com
+            </blockquote>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4 mb-5">
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-telegram hover-custom"></i></a>
+        </div>
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-linkedin-in hover-custom"></i></a>
+        </div>
+    </div>
+</div>
+
+<?php $this->endSection() ?>', [], true)
+ 3 APPPATH\Controllers\Admin\Editor.php(127): view('<?= $this->extend(\'base/base\') ?>
+
+<?= $this->section(\'meta_title\') ?><?= esc($meta_title) ?><?= $this->endsection() ?>
+
+<?php $this->section(\'content\') ?>
+
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 p-2 shadow-lg rounded">
+            <!-- <img class="img-fluid" src="<?= base_url("static/image/home.jpg") ?>" alt=""> -->
+            <div class="bg-image hover-overlay">
+                <img src="<?= base_url("static/image/main/home.jpg") ?>" alt="Programming is an Art Form!"
+                    class="img-fluid w-100" />
+                <div class="mask" style="
+              background: linear-gradient(
+                  45deg,
+                  hsla(168, 85%, 52%, 0.5),
+                  hsla(263, 88%, 45%, 0.5) 100%
+              );"></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="text-center mt-4 display-4">
+                <code class="text-dark">RAMTIN GANJI POUR</code>
+            </h1>
+            <hr class="border-1 border-dark opacity-100">
+            <div class="text-center">
+                <code class="text-dark h5">Computer Engineering Student</code>
+            </div>
+        </div>
+    </div>
+</main>
+<hr class="border-1 border-dark opacity-100">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Address: </span>
+                Iran, Mazandaran, Sari
+            </blockquote>
+        </div>
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Email: </span>
+                ganjipourramin@gmail.com
+            </blockquote>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4 mb-5">
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-telegram hover-custom"></i></a>
+        </div>
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-linkedin-in hover-custom"></i></a>
+        </div>
+    </div>
+</div>
+
+<?php $this->endSection() ?>', [...])
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 16:13:18 --> CSRF token verified.
+DEBUG - 2025-07-30 16:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:13:18 --> Error: Call to undefined method App\Controllers\Admin\Editor::extend()
+[Method: POST, Route: admin/html-editor/preview/home]
+in APPPATH\Controllers\Admin\Editor.php(128) : eval()'d code on line 1.
+ 1 APPPATH\Controllers\Admin\Editor.php(128): eval()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 16:14:04 --> CSRF token verified.
+DEBUG - 2025-07-30 16:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:14:05 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: admin/html-editor/preview/%3C]
+in VENDORPATH\codeigniter4\framework\system\Router\Router.php on line 739.
+ 1 VENDORPATH\codeigniter4\framework\system\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/html-editor/preview/<')
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/html-editor/preview/<')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 16:33:48 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/preview/home', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 16:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 16:41:33 --> CSRF token verified.
+DEBUG - 2025-07-30 16:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:41:34 --> Error: Call to undefined method App\Controllers\Admin\Editor::extend()
+[Method: POST, Route: admin/html-editor/preview/home]
+in APPPATH\Controllers\Admin\Editor.php(128) : eval()'d code on line 1.
+ 1 APPPATH\Controllers\Admin\Editor.php(128): eval()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 16:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 16:45:48 --> CSRF token verified.
+DEBUG - 2025-07-30 16:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:45:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: admin/html-editor/preview/%3C]
+in VENDORPATH\codeigniter4\framework\system\Router\Router.php on line 739.
+ 1 VENDORPATH\codeigniter4\framework\system\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/html-editor/preview/<')
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/html-editor/preview/<')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-30 16:52:35 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/preview/home', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 16:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 16:53:00 --> CSRF token verified.
+DEBUG - 2025-07-30 16:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:53:01 --> ErrorException: Undefined variable $active_nav
+[Method: POST, Route: admin/html-editor/preview/home]
+in APPPATH\Views\base\header.php on line 13.
+ 1 APPPATH\Views\base\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active_nav', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\base\\header.php', 13)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\base\\header.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('base/header', [], true)
+ 5 APPPATH\Libraries\Header.php(36): view('base/header', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\View\Cell.php(289): App\Libraries\Header->load([])
+ 7 VENDORPATH\codeigniter4\framework\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Libraries\Header), 'load', [], 'App\\Libraries\\Header')
+ 8 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('\\App\\Libraries\\Header::load', [], 0, 'AppLibrariesHeaderload40cd750bba9870f18aada2478b24840a')
+ 9 APPPATH\Views\base\base.php(17): view_cell('\\App\\Libraries\\Header::load')
+10 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\base\\base.php')
+11 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 VENDORPATH\codeigniter4\framework\system\View\View.php(240): CodeIgniter\View\View->render('base/base', [], true)
+13 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/editorpreview', [], true)
+14 APPPATH\Controllers\Admin\Editor.php(153): view('admin/editorpreview', [...])
+15 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+16 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+17 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 16:53:21 --> CSRF token verified.
+DEBUG - 2025-07-30 16:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 16:53:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: admin/html-editor/preview/%3C]
+in VENDORPATH\codeigniter4\framework\system\Router\Router.php on line 739.
+ 1 VENDORPATH\codeigniter4\framework\system\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/html-editor/preview/<')
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/html-editor/preview/<')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 17:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 17:31:17 --> CSRF token verified.
+DEBUG - 2025-07-30 17:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:31:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "preview.php"
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Exceptions\FrameworkException.php on line 39.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('preview.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('preview', [], true)
+ 3 APPPATH\Controllers\Admin\Editor.php(149): view('preview', [...])
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 17:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 17:35:18 --> CSRF token verified.
+DEBUG - 2025-07-30 17:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:35:18 --> ErrorException: Undefined variable $meta_title
+[Method: POST, Route: admin/html-editor/preview/home]
+in ROOTPATH\writable\views\preview.php on line 3.
+ 1 ROOTPATH\writable\views\preview.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meta_title', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php', 3)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 APPPATH\Controllers\Admin\Editor.php(151): CodeIgniter\View\View->render('preview', [...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 17:35:42 --> CSRF token verified.
+DEBUG - 2025-07-30 17:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:35:43 --> ErrorException: Undefined variable $meta_title
+[Method: POST, Route: admin/html-editor/preview/home]
+in ROOTPATH\writable\views\preview.php on line 3.
+ 1 ROOTPATH\writable\views\preview.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meta_title', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php', 3)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 APPPATH\Controllers\Admin\Editor.php(151): CodeIgniter\View\View->render('preview', [...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 17:35:47 --> CSRF token verified.
+DEBUG - 2025-07-30 17:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:35:47 --> ErrorException: Undefined variable $meta_title
+[Method: POST, Route: admin/html-editor/preview/home]
+in ROOTPATH\writable\views\preview.php on line 3.
+ 1 ROOTPATH\writable\views\preview.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meta_title', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php', 3)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 APPPATH\Controllers\Admin\Editor.php(151): CodeIgniter\View\View->render('preview', [...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 17:38:00 --> CSRF token verified.
+DEBUG - 2025-07-30 17:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:38:01 --> ErrorException: Undefined variable $meta_title
+[Method: POST, Route: admin/html-editor/preview/home]
+in ROOTPATH\writable\views\preview.php on line 3.
+ 1 ROOTPATH\writable\views\preview.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meta_title', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php', 3)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views\\preview.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 APPPATH\Controllers\Admin\Editor.php(150): CodeIgniter\View\View->render('preview', [...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 17:38:35 --> CSRF token verified.
+DEBUG - 2025-07-30 17:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 17:50:20 --> CSRF token verified.
+DEBUG - 2025-07-30 17:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:50:20 --> ErrorException: file_put_contents(D:\xampp\htdocs\portfolio\ci_app\writable\views/preview.php): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/html-editor/preview/home]
+in APPPATH\Controllers\Admin\Editor.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views/preview.php): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Controllers\\Admin\\Editor.php', 146)
+ 2 APPPATH\Controllers\Admin\Editor.php(146): file_put_contents('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\views/preview.php', '<?= $this->extend(\'base/base\') ?>
+
+<?= $this->section(\'meta_title\') ?><?= esc($meta_title) ?><?= $this->endsection() ?>
+
+<?php $this->section(\'content\') ?>
+
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 p-2 shadow-lg rounded">
+            <!-- <img class="img-fluid" src="<?= base_url("static/image/home.jpg") ?>" alt=""> -->
+            <div class="bg-image hover-overlay">
+                <img src="<?= base_url("static/image/main/home.jpg") ?>" alt="Programming is an Art Form!"
+                    class="img-fluid w-100" />
+                <div class="mask" style="
+              background: linear-gradient(
+                  45deg,
+                  hsla(168, 85%, 52%, 0.5),
+                  hsla(263, 88%, 45%, 0.5) 100%
+              );"></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="text-center mt-4 display-4">
+                <code class="text-dark">RAMTIN GANJI POUR</code>
+            </h1>
+            <hr class="border-1 border-dark opacity-100">
+            <div class="text-center">
+                <code class="text-dark h5">Computer Engineering Student</code>
+            </div>
+        </div>
+    </div>
+</main>
+<hr class="border-1 border-dark opacity-100">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Address: </span>
+                Iran, Mazandaran, Sari
+            </blockquote>
+        </div>
+        <div class="col-12 col-md-6 mb-2 text-center">
+            <blockquote>
+                <span class="fw-bold">Email: </span>
+                ganjipourramin@gmail.com
+            </blockquote>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4 mb-5">
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-telegram hover-custom"></i></a>
+        </div>
+        <div class="col-auto">
+            <a href=""><i class="fs-3 fa-brands fa-linkedin-in hover-custom"></i></a>
+        </div>
+    </div>
+</div>
+
+<?php $this->endSection() ?>')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-30 17:52:12 --> CSRF token verified.
+DEBUG - 2025-07-30 17:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:52:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "preview.php"
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Exceptions\FrameworkException.php on line 39.
+ 1 VENDORPATH\codeigniter4\framework\system\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('preview.php')
+ 2 APPPATH\Controllers\Admin\Editor.php(154): CodeIgniter\View\View->render('preview')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->preview('home')
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 17:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 17:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 17:53:08 --> CSRF token verified.
+DEBUG - 2025-07-30 17:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:54:00 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/preview/home', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 17:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 17:54:53 --> CSRF token verified.
+DEBUG - 2025-07-30 17:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 17:55:06 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/preview/home]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/preview/home', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 17:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 17:58:30 --> CSRF token verified.
+DEBUG - 2025-07-30 17:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 18:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 18:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 18:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 18:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:19:22 --> CSRF token verified.
+DEBUG - 2025-07-30 19:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:20:26 --> CSRF token verified.
+DEBUG - 2025-07-30 19:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:20:40 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/save]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/save', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:24:11 --> CSRF token verified.
+DEBUG - 2025-07-30 19:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:25:53 --> CSRF token verified.
+DEBUG - 2025-07-30 19:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:26:31 --> CSRF token verified.
+DEBUG - 2025-07-30 19:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:30:56 --> CSRF token verified.
+DEBUG - 2025-07-30 19:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:31:03 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/save]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/save', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:31:31 --> CSRF token verified.
+DEBUG - 2025-07-30 19:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:31:36 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: admin/html-editor/save]
+in VENDORPATH\codeigniter4\framework\system\Security\Security.php on line 262.
+ 1 VENDORPATH\codeigniter4\framework\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 VENDORPATH\codeigniter4\framework\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('admin/html-editor/save', 'before')
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:31:56 --> CSRF token verified.
+DEBUG - 2025-07-30 19:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:38:36 --> CSRF token verified.
+DEBUG - 2025-07-30 19:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:38:36 --> ErrorException: Undefined array key ""
+[Method: POST, Route: admin/html-editor/publish]
+in APPPATH\Controllers\Admin\Editor.php on line 219.
+ 1 APPPATH\Controllers\Admin\Editor.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Controllers\\Admin\\Editor.php', 219)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->publishView()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:39:44 --> CSRF token verified.
+DEBUG - 2025-07-30 19:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:44:28 --> ErrorException: Undefined variable $home_backup_20250730_193944.enc
+[Method: GET, Route: admin/view-manager]
+in APPPATH\Views\admin\viewmanager.php on line 61.
+ 1 APPPATH\Views\admin\viewmanager.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $home_backup_20250730_193944.enc', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php', 61)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(224): include('D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Views\\admin\\viewmanager.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/viewmanager', [], true)
+ 5 APPPATH\Controllers\Admin\Editor.php(99): view('admin/viewmanager', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:45:41 --> CSRF token verified.
+DEBUG - 2025-07-30 19:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:45:41 --> ErrorException: file_get_contents(D:\xampp\htdocs\portfolio\ci_app\writable\temp_views/home.enc): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/html-editor/publish]
+in APPPATH\Controllers\Admin\Editor.php on line 247.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\temp_views/home.enc): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Controllers\\Admin\\Editor.php', 247)
+ 2 APPPATH\Controllers\Admin\Editor.php(247): file_get_contents('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\temp_views/home.enc')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->publishView()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:47:04 --> CSRF token verified.
+DEBUG - 2025-07-30 19:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:47:04 --> ErrorException: file_get_contents(D:\xampp\htdocs\portfolio\ci_app\writable\temp_views/home.enc): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/html-editor/publish]
+in APPPATH\Controllers\Admin\Editor.php on line 247.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\temp_views/home.enc): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Controllers\\Admin\\Editor.php', 247)
+ 2 APPPATH\Controllers\Admin\Editor.php(247): file_get_contents('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\temp_views/home.enc')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->publishView()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:50:14 --> CSRF token verified.
+DEBUG - 2025-07-30 19:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-30 19:50:14 --> ErrorException: file_get_contents(D:\xampp\htdocs\portfolio\ci_app\writable\temp_views/home.enc): Failed to open stream: No such file or directory
+[Method: POST, Route: admin/html-editor/publish]
+in APPPATH\Controllers\Admin\Editor.php on line 247.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\temp_views/home.enc): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\portfolio\\ci_app\\app\\Controllers\\Admin\\Editor.php', 247)
+ 2 APPPATH\Controllers\Admin\Editor.php(247): file_get_contents('D:\\xampp\\htdocs\\portfolio\\ci_app\\writable\\temp_views/home.enc')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin\Editor->publishView()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Editor))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-30 19:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:51:48 --> CSRF token verified.
+DEBUG - 2025-07-30 19:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:52:50 --> CSRF token verified.
+DEBUG - 2025-07-30 19:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-30 19:52:55 --> CSRF token verified.
+DEBUG - 2025-07-30 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 19:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 20:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-30 21:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

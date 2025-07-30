@@ -1,0 +1,159 @@
+DEBUG - 2025-07-29 00:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 00:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 01:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 01:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 01:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 02:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 03:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 05:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 07:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 07:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 07:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 08:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 09:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 09:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 09:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 10:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 10:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 12:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 12:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 12:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 13:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 13:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 13:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 15:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 17:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-29 17:04:15 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\xampp\htdocs\portfolio\ci_app\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\system\Database\BaseConnection.php(421): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\ci_app\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\ci_app\system\Database\BaseConnection.php(620): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\xampp\htdocs\portfolio\ci_app\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\portfolio\ci_app\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\portfolio\ci_app\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\portfolio\ci_app\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 D:\xampp\htdocs\portfolio\ci_app\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#9 D:\xampp\htdocs\portfolio\ci_app\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\xampp\htdocs\portfolio\ci_app\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-29 17:04:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uri`
+WHERE `uri` = :uri:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-29 17:10:27 --> ErrorException: Constant expression contains invalid operations
+[Method: GET, Route: product/index.php]
+in APPPATH\Config\Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-29 17:10:27 --> ErrorException: Constant expression contains invalid operations
+[Method: POST, Route: logstores/logstore_ens_ip/shards/lb]
+in APPPATH\Config\Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-07-29 17:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-29 17:14:10 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-29 17:14:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 467.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uri`
+WHERE `uri` = :uri:
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-29 17:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-29 17:14:11 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:118
+Stack trace:
+#0 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\portfolio\ci_app\app\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#9 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\xampp\htdocs\portfolio\ci_app\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\portfolio\ci_app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\portfolio\public_html\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-07-29 17:14:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 467.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\SQLite3\Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uri`
+WHERE `uri` = :uri:
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Filters\ViewLogger.php(39): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(241): App\Filters\ViewLogger->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('', 'before')
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-29 17:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-29 18:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

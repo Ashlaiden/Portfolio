@@ -1,0 +1,117 @@
+DEBUG - 2025-07-27 00:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 01:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 02:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 02:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 03:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 03:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 03:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 03:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 03:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-27 03:04:03 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "css2?family=Exo 2:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+[Method: GET, Route: https:/fonts.googleapis.com/css2%3Ffamily=Exo+2:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap]
+in SYSTEMPATH/Router/Router.php on line 739.
+ 1 SYSTEMPATH/Router/Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(832): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(60): CodeIgniter\Boot::bootWeb()
+DEBUG - 2025-07-27 03:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 03:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-27 03:04:30 --> SQLite3Exception: database is locked in /var/www/portfolio/ci_app/system/Database/SQLite3/Connection.php:175
+Stack trace:
+#0 /var/www/portfolio/ci_app/system/Database/SQLite3/Connection.php(175): SQLite3->exec()
+#1 /var/www/portfolio/ci_app/system/Database/BaseConnection.php(738): CodeIgniter\Database\SQLite3\Connection->execute()
+#2 /var/www/portfolio/ci_app/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/portfolio/ci_app/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/portfolio/ci_app/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/portfolio/ci_app/system/BaseModel.php(839): CodeIgniter\Model->doInsert()
+#6 /var/www/portfolio/ci_app/system/Model.php(800): CodeIgniter\BaseModel->insert()
+#7 /var/www/portfolio/ci_app/system/BaseModel.php(750): CodeIgniter\Model->insert()
+#8 /var/www/portfolio/ci_app/app/Filters/ViewLogger.php(96): CodeIgniter\BaseModel->save()
+#9 /var/www/portfolio/ci_app/system/Filters/Filters.php(241): App\Filters\ViewLogger->before()
+#10 /var/www/portfolio/ci_app/system/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+#11 /var/www/portfolio/ci_app/system/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+#12 /var/www/portfolio/ci_app/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#13 /var/www/portfolio/ci_app/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 /var/www/portfolio/ci_app/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#15 /var/www/portfolio/public_html/index.php(60): CodeIgniter\Boot::bootWeb()
+#16 {main}
+CRITICAL - 2025-07-27 03:04:30 --> CodeIgniter\Database\Exceptions\DatabaseException: database is locked
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(750): CodeIgniter\Model->insert()
+ 6 APPPATH/Filters/ViewLogger.php(96): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/Filters/Filters.php(241): App\Filters\ViewLogger->before()
+ 8 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 9 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(60): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-27 03:04:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: database is locked
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 181.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(750): CodeIgniter\Model->insert()
+ 8 APPPATH/Filters/ViewLogger.php(96): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/Filters/Filters.php(241): App\Filters\ViewLogger->before()
+10 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+11 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(60): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-07-27 03:04:30 --> [Caused by] SQLite3Exception: database is locked
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 175.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(175): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(839): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(750): CodeIgniter\Model->insert()
+ 9 APPPATH/Filters/ViewLogger.php(96): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/Filters/Filters.php(241): App\Filters\ViewLogger->before()
+11 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+12 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+13 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+14 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+16 FCPATH/index.php(60): CodeIgniter\Boot::bootWeb()
+DEBUG - 2025-07-27 03:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 03:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 04:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 05:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 06:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 06:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 07:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 08:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 08:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 10:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 10:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 11:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 12:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 12:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 13:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 13:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 13:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 14:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 15:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 17:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 17:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 18:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 18:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 18:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 18:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-27 21:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

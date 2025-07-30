@@ -86,6 +86,15 @@ $routes->group($adminPrefix, ['namespace' => 'App\Controllers\Admin'], function 
     $routes->post('setting/delete-admin', 'Setting::deleteadmin');
     $routes->post('setting/profile/update', 'Setting::editprofile');
 
+    // --- HTML Edit ---
+    $routes->get('view-manager', 'Editor::index');
+    $routes->get('html-editor/edit/(:segment)', 'Editor::editView/$1');
+    $routes->post('html-editor/save', 'Editor::saveView');
+    $routes->post('html-editor/publish', 'Editor::publishView');
+    $routes->post('html-editor/delete', 'Editor::deleteBackup');
+    $routes->post('html-editor/reset-default', 'Editor::makeDefault');
+    $routes->post('html-editor/preview/(:segment)', 'Editor::preview/$1');
+
     // --- Dev Tools ---
     $routes->get('testmail', 'Auth::testEmail');
 });

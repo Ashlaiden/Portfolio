@@ -34,6 +34,8 @@
                 </div>
             </div>
 
+            <a href="<?= admin_url('view-manager') ?>" class="nav-item nav-link mb-3 <?= $active == 'editor' ? 'active' : '' ?>">
+                <i class="fa fa-laptop me-2"></i>Editor</a>
 
             <a href="<?= admin_url('setting') ?>"
                 class="nav-item nav-link mb-3 <?= $active == 'setting' ? 'active' : '' ?>"><i

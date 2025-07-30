@@ -37,6 +37,10 @@ INSERT INTO `app_settings` (`id`, `key_name`, `value`, `updated_at`) VALUES
 (1, 'admin_prefix', 'admin', '2025-04-22 08:21:43');
 INSERT INTO `app_settings` (`id`, `key_name`, `value`, `updated_at`) VALUES
 (2, 'email_interval', '120', '2025-04-22 08:21:43');
+INSERT INTO `app_settings` (`id`, `key_name`, `value`, `updated_at`) VALUES
+(3, 'email_verify', '0', '2025-04-22 08:21:43');
+INSERT INTO `app_settings` (`id`, `key_name`, `value`, `updated_at`) VALUES
+(4, 'contact_page_active', '1', '2025-04-22 08:21:43');
 
 CREATE TABLE `gallery` (
 `id` INTEGER  NOT NULL ,

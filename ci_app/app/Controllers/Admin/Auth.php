@@ -10,6 +10,7 @@ class Auth extends BaseController
 {
     private int $email_interval;
     private $adminPrefix;
+    private $emailVerify;
     private ?object $settings;
 
     public function __construct()
@@ -22,6 +23,10 @@ class Auth extends BaseController
         $this->email_interval = $this->settings->get(
             'email_interval',
             env('EMAIL_DEFAULT_INTERVAL')
+        );
+        $this->emailVerify = $this->settings->get(
+            'email_verify',
+            env('EMAIL_DEFAULT_VERIFY')
         );
     }
 
@@ -145,15 +150,24 @@ class Auth extends BaseController
             return redirect()->back()->with('error', 'Account is inactive.');
         }
 
-        session()->set([
-            'admin_id' => $admin['id'],
-            'admin_role' => $admin['role'],
-            'admin_email' => $admin['email'],
-            'isAdmin' => false,
-        ]);
+        if ($this->emailVerify) {
+            session()->set([
+                'admin_id' => $admin['id'],
+                'admin_role' => $admin['role'],
+                'admin_email' => $admin['email'],
+                'isAdmin' => false,
+            ]);
 
-        // Send code to email
-        $this->sendVerificationCode($admin['email']);
+            // Send code to email
+            $this->sendVerificationCode($admin['email']);
+        } else {
+            session()->set([
+                'admin_id' => $admin['id'],
+                'admin_role' => $admin['role'],
+                'admin_email' => $admin['email'],
+                'isAdmin' => true,
+            ]);
+        }
 
         return redirect()->to($this->adminPrefix . '/login/verify');
     }
