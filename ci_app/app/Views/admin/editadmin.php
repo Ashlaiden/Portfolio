@@ -96,16 +96,16 @@
                             <div class="col-12">
                                 <button type="submit" class="btn btn-success w-100">Save</button>
                             </div>
-                            <div class="col-12">
-                                <form method="post" action="<?= admin_url('setting/delete-admin') ?>"
-                                    onsubmit="return confirm('Are you sure?');">
-                                    <?= csrf_field() ?>
-                                    <input type="hidden" name="id" value="<?= esc($admin['id']) ?>">
-                                    <button type="submit" class="btn btn-danger w-100">Delete Admin</button>
-                                </form>
-                            </div>
                         </div>
                     </form>
+                    <div class="col-12 mt-3">
+                        <form method="post" action="<?= admin_url('setting/delete-admin') ?>"
+                              onsubmit="return confirm('Are you sure?');">
+                            <?= csrf_field() ?>
+                            <input type="hidden" name="id" value="<?= esc($admin['id']) ?>">
+                            <button type="submit" class="btn btn-danger w-100">Delete Admin</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
