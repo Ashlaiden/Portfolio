@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.GP | <?= $this->renderSection('meta_title')?></title>
+    <link rel="icon" href="<?= base_url("/favicon.ico");?>" type="image/x-icon">
     <link rel="stylesheet" href="<?= base_url("static/css/bootstrap.min.css");?>">
     <script src="<?= base_url("static/js/bootstrap.min.js");?>"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
