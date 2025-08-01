@@ -20,6 +20,12 @@ class SettingsService
     public function get($key, $default = null)
     {
         $settings = $this->getAll();
+        return $settings[$key]['value'] ?? $default;
+    }
+
+    public function getAsObj($key, $default = null)
+    {
+        $settings = $this->getAll();
         return $settings[$key] ?? $default;
     }
 
@@ -31,7 +37,10 @@ class SettingsService
 
         $allSettings = [];
         foreach ($this->model->findAll() as $row) {
-            $allSettings[$row['key_name']] = $row['value'];
+            $allSettings[$row['key_name']] = [
+                'value' => $row['value'],
+                'comment' => $row['comment'],
+            ];
         }
 
         $this->cache->save($this->cacheKey, $allSettings, $this->cacheTTL);

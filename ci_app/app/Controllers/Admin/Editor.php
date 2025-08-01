@@ -7,7 +7,7 @@ use CodeIgniter\Files\Exceptions\FileNotFoundException;
 class Editor extends Controller
 {
     // Whitelisted view files for editing (app/Views/)
-    protected $editableViews:
+    protected $editableViews;
 
     // Path to store encrypted temp copies and backups
     protected $tempPath;
@@ -30,12 +30,12 @@ class Editor extends Controller
             $this->editableViews = [
                 'home' => APPPATH . 'Views/home.php',
                 'about' => APPPATH . 'Views/about.php',
+                'contact' => APPPATH . 'Views/contact.php',
             ];
         } else {
             $this->editableViews = [
                 'home' => APPPATH . 'Views/home.php',
                 'about' => APPPATH . 'Views/about.php',
-                'contact' => APPPATH . 'Views/contact.php',
             ];
         }
     }
@@ -68,6 +68,24 @@ class Editor extends Controller
         }
     }
 
+//    public function csrfRefresh($data = false)
+//    {
+//        if ($data) {
+//            return $this->response
+//                ->setContentType('application/json')
+//                ->setJSON([
+//                    'tokenName'  => config('Security')->tokenName,
+//                    'tokenValue' => csrf_hash(),
+//                ]);
+//        } else {
+//            return $this->response
+//                ->setContentType('application/json')
+//                ->setJSON([
+//                    'success'  => false,
+//                    'status' => 'error',
+//                ]);
+//        }
+//    }
 
     /**
      * List editable pages and their backups
@@ -76,6 +94,10 @@ class Editor extends Controller
     {
         if (!session('isAdmin')) {
             return redirect()->to(site_url($this->adminPrefix . '/login'));
+        }
+
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'editor']);
         }
 
         // Prepare pages list
@@ -115,6 +137,10 @@ class Editor extends Controller
             return redirect()->to(site_url($this->adminPrefix . '/login'));
         }
 
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'editor']);
+        }
+
         if (!isset($this->editableViews[$slug])) {
             throw PageNotFoundException::forPageNotFound();
         }
@@ -148,6 +174,10 @@ class Editor extends Controller
             return redirect()->to(site_url($this->adminPrefix . '/login'));
         }
 
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'editor']);
+        }
+
         $content = $this->request->getPost('content');
 
         $tempPath = $this->tempPath . '/preview.php';
@@ -165,17 +195,20 @@ class Editor extends Controller
     /**
      * Set Editing File To Default Page Content
      */
-    public function makeDefault() {
+    public function resetDefault() {
         if (!session('isAdmin')) {
             return redirect()->to(site_url($this->adminPrefix . '/login'));
+        }
+
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'editor']);
         }
 
         $slug = $this->request->getPost('slug');
         $encFile = $this->tempPath . $slug . '.enc';
 
-        if (!file_exists($encFile)) {
+        if (file_exists($encFile)) {
             unlink($encFile);
-            $this->enc_files($slug);
             return redirect()->to(site_url($this->adminPrefix . '/view-manager'));
         } else {
             return redirect()->to(site_url($this->adminPrefix . '/view-manager'));
@@ -189,6 +222,10 @@ class Editor extends Controller
     {
         if (!session('isAdmin')) {
             return redirect()->to(site_url($this->adminPrefix . '/login'));
+        }
+
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'editor']);
         }
 
         $slug = $this->request->getPost('slug');
@@ -218,6 +255,10 @@ class Editor extends Controller
     {
         if (!session('isAdmin')) {
             return redirect()->to(site_url($this->adminPrefix . '/login'));
+        }
+
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'editor']);
         }
 
         $slug = $this->request->getPost('slug');
@@ -279,6 +320,10 @@ class Editor extends Controller
     {
         if (!session('isAdmin')) {
             return redirect()->to(site_url($this->adminPrefix . '/login'));
+        }
+
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'dashboard']);
         }
 
         $slug = $this->request->getPost('slug');

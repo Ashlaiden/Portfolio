@@ -614,7 +614,7 @@ class Projects extends BaseController
         }
         
         if (! in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
-            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'setting']);
+            return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'projects']);
         }
 
         $projectModel = new Project();

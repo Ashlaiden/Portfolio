@@ -10,7 +10,7 @@ $adminPrefix = env('ADMIN_DEFAULT_PREFIX');
 
 // try to get it from the cache
 if ($settings = $cache->get('app_settings')) {
-    $adminPrefix = $settings['admin_prefix'] ?? env('ADMIN_DEFAULT_PREFIX');
+    $adminPrefix = $settings['admin_prefix']['value'] ?? env('ADMIN_DEFAULT_PREFIX');
 }
 
 
@@ -92,8 +92,9 @@ $routes->group($adminPrefix, ['namespace' => 'App\Controllers\Admin'], function 
     $routes->post('html-editor/save', 'Editor::saveView');
     $routes->post('html-editor/publish', 'Editor::publishView');
     $routes->post('html-editor/delete', 'Editor::deleteBackup');
-    $routes->post('html-editor/reset-default', 'Editor::makeDefault');
+    $routes->post('html-editor/reset-default', 'Editor::resetDefault');
     $routes->post('html-editor/preview/(:segment)', 'Editor::preview/$1');
+    $routes->get('html-editor/csrf-refresh/(:segment)', 'Editor::csrfRefresh/$1');
 
     // --- Dev Tools ---
     $routes->get('testmail', 'Auth::testEmail');

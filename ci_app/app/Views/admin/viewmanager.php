@@ -18,6 +18,12 @@
                         <h4 class="mb-4"><?= esc($page['title']) ?> Page</h4>
                         <div class="d-flex flex-row align-items-center pb-3">
                             <?php if ($page['edited']) : ?>
+                                <form method="post" action="<?= admin_url('html-editor/reset-default') ?>"
+                                      onsubmit="return confirm('Are you sure you want to Publish Edited Page?');">
+                                    <?= csrf_field() ?>
+                                    <input type="hidden" name="slug" value="<?= esc($page['slug']) ?>">
+                                    <button type="submit" class="btn btn-outline-warning m-2">Reset</button>
+                                </form>
                                 <form method="post" action="<?= admin_url('html-editor/publish') ?>"
                                     onsubmit="return confirm('Are you sure you want to Publish Edited Page?');">
                                     <?= csrf_field() ?>
