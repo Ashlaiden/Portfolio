@@ -21,7 +21,7 @@
         </div>
         <div class="col-12">
             <h1 class="text-center mt-4 display-4">
-                <code class="text-dark">RAMTIN GANJI POUR</code>
+                <code class="text-dark">Test TimeZone</code>
             </h1>
             <hr class="border-1 border-dark opacity-100">
             <div class="text-center">

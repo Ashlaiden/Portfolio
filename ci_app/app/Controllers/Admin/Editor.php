@@ -3,6 +3,8 @@
 use CodeIgniter\Controller;
 use CodeIgniter\Exceptions\PageNotFoundException;
 use CodeIgniter\Files\Exceptions\FileNotFoundException;
+use DateTime;
+use DateTimeZone;
 
 class Editor extends Controller
 {
@@ -12,6 +14,7 @@ class Editor extends Controller
     // Path to store encrypted temp copies and backups
     protected $tempPath;
     private $adminPrefix;
+    private $timeZone;
     private ?object $settings;
 
     public function __construct()
@@ -20,6 +23,10 @@ class Editor extends Controller
         $this->adminPrefix = $this->settings->get(
             'admin_prefix',
             env('ADMIN_DEFAULT_PREFIX')
+        );
+        $this->timeZone = $this->settings->get(
+            'admin_prefix',
+            env('DEFAULT_TIME_ZONE')
         );
 
         // Encrypted temps in writable folder
@@ -250,6 +257,8 @@ class Editor extends Controller
 
     /**
      * Publish Edited File or a specific backup
+     * @throws \DateInvalidTimeZoneException
+     * @throws \DateMalformedStringException
      */
     public function publishView()
     {
@@ -275,7 +284,9 @@ class Editor extends Controller
             : null;
         if ($backupRaw) {
             $encryptedBackupRaw = $encrypter->encrypt($backupRaw);
-            $timestamp = date('Y-m-d__H-i-s');
+            $tz     = new DateTimeZone($this->timeZone);
+            $nowTeh = new DateTime('now', $tz);
+            $timestamp = $nowTeh->format('Y-m-d__H-i-s');
             $rawPath = $this->tempPath . '/' . $slug . '/' . "{$slug}_backup_{$timestamp}.enc";
             if (!write_file($rawPath, $encryptedBackupRaw)) {
                 return redirect()->back()->with('error', 'Failed to save temp view.');
