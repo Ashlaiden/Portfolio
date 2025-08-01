@@ -25,7 +25,7 @@ class Editor extends Controller
             env('ADMIN_DEFAULT_PREFIX')
         );
         $this->timeZone = $this->settings->get(
-            'admin_prefix',
+            'time_zone',
             env('DEFAULT_TIME_ZONE')
         );
 
