@@ -38,14 +38,12 @@ col-12
                             <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                             <p class="text-white-50 mb-5">Please enter your login and password!</p>
 
-                            <?php if (session()->has('errors')): ?>
-                                <div class="text-danger my-3 text-start">
-                                    <ul>
-                                        <?php foreach (session('errors') as $error): ?>
-                                            <li><?= esc($error) ?></li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
+                            <?php if ($errors = session()->getFlashdata('errors')): ?>
+                                <ul class="list-group list-group-flush small mb-3">
+                                    <?php foreach ($errors as $error): ?>
+                                        <li class="list-group-item list-group-item-danger py-1 px-2"><?= esc($error) ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
                             <?php endif; ?>
 
                             <div class="form-outline form-white mb-4">

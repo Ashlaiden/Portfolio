@@ -417,7 +417,7 @@ class Gallery extends BaseController
             return redirect()->to(site_url($this->adminPrefix . '/login'));
         }
 
-        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin'])) {
+        if (!in_array(session()->get('admin_role'), ['owner', 'superadmin', 'admin'])) {
             return view('admin/accessdenied', ['meta_title' => 'Access Denied', 'active' => 'gallery']);
         }
 
