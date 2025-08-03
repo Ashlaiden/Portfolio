@@ -5,12 +5,15 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\Admin;
 use ReflectionException;
+use DateTime;
+use DateTimeZone;
 
 class Auth extends BaseController
 {
     private int $email_interval;
     private $adminPrefix;
     private $emailVerify;
+    private $timeZone;
     private ?object $settings;
 
     public function __construct()
@@ -27,6 +30,10 @@ class Auth extends BaseController
         $this->emailVerify = $this->settings->get(
             'email_verify',
             env('EMAIL_DEFAULT_VERIFY')
+        );
+        $this->timeZone = $this->settings->get(
+            'time_zone',
+            env('DEFAULT_TIME_ZONE')
         );
     }
 
@@ -90,6 +97,8 @@ class Auth extends BaseController
 
     /**
      * @throws ReflectionException
+     * @throws \DateInvalidTimeZoneException
+     * @throws \DateMalformedStringException
      */
     public function login()
     {
@@ -167,6 +176,14 @@ class Auth extends BaseController
                 'admin_email' => $admin['email'],
                 'isAdmin' => true,
             ]);
+            $last_login = $admin['last_login'];
+            $tz = new DateTimeZone($this->timeZone);
+            $nowTeh = new DateTime('now', $tz);
+            $timestamp = $nowTeh->format('Y-m-d H:i:s');
+            $adminModel->update($admin['id'], [
+                'this_login' => $timestamp,
+                'last_login' => $last_login
+            ]);
         }
 
         return redirect()->to($this->adminPrefix . '/login/verify');
@@ -174,6 +191,8 @@ class Auth extends BaseController
 
     /**
      * @throws ReflectionException
+     * @throws \DateInvalidTimeZoneException
+     * @throws \DateMalformedStringException
      */
     public function verify()
     {
@@ -241,11 +260,15 @@ class Auth extends BaseController
             session()->set('isAdmin', true);
 
             $adminModel = new Admin();
-            $admin = $adminModel->find(session()->get('admin_id'));
+            // $admin = $adminModel->find(session()->get('admin_id'));
+            $admin = $adminModel->where('id', session()->get('admin_id'))->first();
             $last_login = $admin['last_login'];
             // Optional: update last login
+            $tz = new DateTimeZone($this->timeZone);
+            $nowTeh = new DateTime('now', $tz);
+            $timestamp = $nowTeh->format('Y-m-d H:i:s');
             $adminModel->update($admin['id'], [
-                'this_login' => date('Y-m-d H:i:s'),
+                'this_login' => $timestamp,
                 'last_login' => $last_login
             ]);
 

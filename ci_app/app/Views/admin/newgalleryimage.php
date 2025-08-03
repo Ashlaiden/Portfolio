@@ -53,7 +53,7 @@
                                 <div class="form-floating mb-3">
                                     <select name="project_select" class="form-select" id="projectSelect"
                                         aria-label="Floating label select example">
-                                        <option value="none" <?= $project_id == null ? 'selected' : '' ?>>No Project</option>
+                                        <option value=0 <?= $project_id == null ? 'selected' : '' ?>>No Project</option>
                                         <?php foreach ($projects as $project): ?>
                                             <option value="<?= esc($project['id']) ?>" <?= $project_id == $project['id'] ? 'selected' : '' ?>><?= esc($project['title']) ?>
                                             </option>

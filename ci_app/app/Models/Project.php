@@ -22,7 +22,7 @@ class Project extends Model
             ->join('gallery', 'gallery.id = gallery_project.gallery_id')
             ->where('gallery_project.projects_id', $projectId)
             ->get()
-            ->getResult();
+            ->getResultArray();
     }
 
     public function addGallery($projectId, $galleryId)

@@ -95,6 +95,7 @@
                                                     onsubmit="return confirm('Delete?');">
                                                     <?= csrf_field() ?>
                                                     <input type="hidden" name="id" value="<?= esc($gallery['id']) ?>">
+                                                    <input type="hidden" name="projectID" value="<?= esc($project['id']) ?>">
                                                     <button type="submit" class="btn btn-sm btn-danger">Del</button>
                                                 </form>
                                                 <a class="btn btn-sm btn-success"

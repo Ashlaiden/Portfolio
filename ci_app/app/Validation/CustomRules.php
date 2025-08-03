@@ -7,6 +7,10 @@ class CustomRules
 {
     public function is_exist(string $str, string $fields, array $data): bool
     {
+        if (!is_string($str) | $str == '') {
+            return false;  // or true, depending on whether you want “required” to catch it
+        }
+
         list($table, $column) = explode('.', $fields);
         $db = \Config\Database::connect();
 

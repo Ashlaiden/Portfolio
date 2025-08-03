@@ -8,10 +8,13 @@ use App\Models\View;
 use App\Models\Project;
 use App\Models\Gallery;
 use ReflectionException;
+use DateTime;
+use DateTimeZone;
 
 class Projects extends BaseController
 {
     private $adminPrefix;
+    private $timeZone;
     private ?object $settings;
 
     public function __construct()
@@ -20,6 +23,10 @@ class Projects extends BaseController
         $this->adminPrefix = $this->settings->get(
             'admin_prefix',
             env('ADMIN_DEFAULT_PREFIX')
+        );
+        $this->timeZone = $this->settings->get(
+            'time_zone',
+            env('DEFAULT_TIME_ZONE')
         );
     }
 
@@ -233,6 +240,7 @@ class Projects extends BaseController
         }
 
         $galleryID = $this->request->getPost('id');
+        $projectID = $this->request->getPost('projectID');
 
         $validation = \Config\Services::validation();
 
@@ -250,45 +258,25 @@ class Projects extends BaseController
         $gallery = $galleryModel->find($galleryID);
 
         $prjModel = new Project();
-        if ($prjModel->where('on_delete', true)->find($gallery['project_id'])) {
+        if ($prjModel->find($projectID)['on_delete'] == true) {
             return redirect()->to(site_url($this->adminPrefix . '/project/trash'));
         }
 
         if (!$gallery) {
             return redirect()->back();
         }
-        $oldImagePath = WRITEPATH . '../public/' . $gallery['image_path'];
 
-
-        if (file_exists($oldImagePath)) {
-            unlink($oldImagePath);
-
-            // Get the directory of the image
-            $parentDir = dirname($oldImagePath);
-
-            // Scan the directory
-            $files = scandir($parentDir);
-
-            // Filter out . and .. and any index.html
-            $remainingFiles = array_filter($files, function ($file) {
-                return $file !== '.' && $file !== '..' && $file !== 'index.html';
-            });
-
-            // If it's empty (or only has index.html), delete the folder
-            if (empty($remainingFiles)) {
-                // Optionally delete index.html too if you want:
-                $indexPath = $parentDir . '/index.html';
-                if (file_exists($indexPath)) {
-                    unlink($indexPath);
-                }
-
-                rmdir($parentDir); // Delete the folder
-            }
+        if ($gallery['on_delete']) {
+            return redirect()->to(site_url($this->adminPrefix . '/gallery/trash'));
         }
 
-        $projectID = $gallery['project_id'];
-        $galleryModel->delete($galleryID);
-
+        $tz = new DateTimeZone($this->timeZone);
+        $nowTeh = new DateTime('now', $tz);
+        $timestamp = $nowTeh->format('Y-m-d H:i:s');
+        $galleryModel->update($gallery['id'], [
+            'on_delete' => true,
+            'deleted_at' => $timestamp
+        ]);
 
         return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $projectID));
     }
@@ -307,7 +295,7 @@ class Projects extends BaseController
             $galleryMODEL = new Gallery();
 
             $prjModel = new Project();
-            if ($prjModel->where('on_delete', true)->find($galleryMODEL->find($id)['project_id'])) {
+            if ($galleryMODEL->getProjects($id)[0]['on_delete'] == true) {
                 return redirect()->to(site_url($this->adminPrefix . '/project/trash'));
             }
 
@@ -320,8 +308,9 @@ class Projects extends BaseController
             $data = [
                 'meta_title' => 'Edit Gallery Image',
                 'active' => 'projects',
-                'project_id' => $id,
+                'project_id' => $galleryMODEL->getProjects($id)[0]['id'],
                 'gallery' => $gallery,
+                'projects' => $prjModel->findAll()
             ];
 
             return view('admin/editgalleryimage', $data);
@@ -330,57 +319,74 @@ class Projects extends BaseController
         $gallery_id = $this->request->getPost('gallery_id');
         $title = $this->request->getPost('title');
         $gallery_image = $this->request->getFile('gallery_image');
+        $project_select = intval($this->request->getPost('project_select'));
 
         $validation = \Config\Services::validation();
 
         $rules = [
             'gallery_id' => 'required|is_exist[gallery.id]',
             'title' => 'required|min_length[3]|max_length[255]',
-            'gallery_image' => 'uploaded[gallery_image]|is_image[gallery_image]|mime_in[gallery_image,image/jpg,image/jpeg,image/png]|max_size[gallery_image,4096]',
+            'gallery_image' => 'permit_empty|is_image[gallery_image]|mime_in[gallery_image,image/jpg,image/jpeg,image/png]|max_size[gallery_image,4096]',
         ];
+
+        if ($project_select !== "none") {
+            $rules['project_select'] = 'is_exist[projects.id]';
+        }
 
         if (!$this->validate($rules)) {
             // If validation fails, redirect back with input and errors
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $galleryImagePath = Null;
-        $galleryImageName = Null;
-
-        $galleryMODEL = new Gallery();
+        $galleryMODEL = new GalleryModel();
         $gallery = $galleryMODEL->find($gallery_id);
 
-        $prjModel = new Project();
-        if ($prjModel->where('on_delete', true)->find($gallery['project_id'])) {
-            return redirect()->to(site_url($this->adminPrefix . '/project/trash'));
+        $GMData = [
+            'title' => $title,
+        ];
+
+        if ($gallery_image) {
+            $galleryImagePath = Null;
+            $galleryImageName = Null;
+
+            if ($gallery_image->isValid() && !$gallery_image->hasMoved()) {
+                $gallery_image_original_name = $gallery_image->getName();
+                $galleryImageName = pathinfo($gallery_image_original_name, PATHINFO_FILENAME);
+
+                // Get extension
+                $extension = $gallery_image->getExtension(); // or PATHINFO_EXTENSION
+
+                // Add random number at the end with a separator
+                $newName = $galleryImageName . '__Gallery__' . rand(1000, 9999) . '.' . $extension;
+
+                // Move to public/projects folder
+                $gallery_image->move('static/image/gallery/', $newName);
+
+                // Save the relative path to DB
+                $galleryImagePath = 'static/image/gallery/' . $newName;
+                $GMData['image_path'] = $galleryImagePath;
+            }
         }
 
+        $galleryMODEL->update($gallery['id'], $GMData);
 
-        if ($gallery_image->isValid() && !$gallery_image->hasMoved()) {
-            $gallery_image_original_name = $gallery_image->getName();
-            $galleryImageName = pathinfo($gallery_image_original_name, PATHINFO_FILENAME);
-
-            // Get extension
-            $extension = $gallery_image->getExtension(); // or PATHINFO_EXTENSION
-
-            // Add random number at the end with a separator
-            $newName = $galleryImageName . '__Gallery__' . rand(1000, 9999) . '.' . $extension;
-
-            // Move to public/projects folder
-            $gallery_image->move('static/image/projects/' . $gallery['project_id'] . '/', $newName);
-
-            // Save the relative path to DB
-            $galleryImagePath = 'static/image/projects/' . $gallery['project_id'] . '/' . $newName;
+        $projectModel = new Project();
+        if ($project_select !== 'none' && $projectModel->find($project_select)) {
+            $project = $galleryMODEL->getProjects($gallery['id']);
+            if (count($project) > 0) {
+                if ($project['id'] !== $project_select && $project['on_delete'] !== true) {
+                    $galleryMODEL->removeProject($gallery['id'], $project['id']);
+                    $galleryMODEL->addProject($gallery['id'], $project_select);
+                    return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $project_select));
+                }
+            } else {
+                $galleryMODEL->addProject($gallery['id'], $project_select);
+                return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $project_select));
+            }
         }
 
-        $galleryModel = new Gallery();
-
-        $galleryModel->update($gallery['id'], [
-           'title' => $title,
-           'image_path' => $galleryImagePath,
-        ]);
-
-        return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $gallery['project_id']));
+        return redirect()->to(site_url($this->adminPrefix . '/gallery/detail/' . $gallery['id']));
+        
     }
 
     /**
@@ -641,8 +647,7 @@ class Projects extends BaseController
 
         $projectModel = new Project();
         $project = $projectModel->find($id);
-        $galleryModel = new Gallery();
-        $galleries = $galleryModel->where('project_id', $id)->findAll();
+        $galleries = $projectModel->getGalleries($id);
 
         if ($project['on_delete'] == false) {
             return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $project['id']));
@@ -780,7 +785,6 @@ class Projects extends BaseController
 
         $projectModel->delete($project['id']);
 
-        echo '<h1>Hello</h1>';
 
         return redirect()->to(site_url($this->adminPrefix . '/project/trash'));
     }

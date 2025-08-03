@@ -28,8 +28,7 @@ class Projects extends BaseController
             return redirect()->to('/projects');
         }
 
-        $galleryModel = new Gallery();
-        $gallery = $galleryModel->where('project_id', $id)->findAll();
+        $gallery = $projectModel->getGalleries($id);
 
         $data = [
             'meta_title' => 'Project Detail',

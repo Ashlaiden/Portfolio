@@ -22,7 +22,27 @@ class Gallery extends Model
             ->join('projects', 'projects.id = gallery_project.projects_id')
             ->where('gallery_project.gallery_id', $galleryId)
             ->get()
-            ->getResult();
+            ->getResultArray();
+    }
+
+    /**
+     * Get the single project attached to a gallery image.
+     *
+     * @param int $galleryId
+     * @return object|null  // stdClass with project fields, or null if none
+     */
+    public function getProject(int $galleryId)
+    {
+        $result = $this->db
+            ->table('gallery_project')
+            ->select('projects.id, projects.title, projects.on_delete')
+            ->join('projects', 'projects.id = gallery_project.projects_id')
+            ->where('gallery_project.gallery_id', $galleryId)
+            ->limit(1)
+            ->get()
+            ->getRowArray();
+
+        return $result ?: null;
     }
 
     public function addProject($galleryId, $projectId)

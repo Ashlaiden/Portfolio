@@ -7,10 +7,13 @@ use App\Models\GalleryProject;
 use App\Models\Project;
 use App\Models\Gallery as GalleryModel;
 use ReflectionException;
+use DateTime;
+use DateTimeZone;
 
 class Gallery extends BaseController
 {
     private $adminPrefix;
+    private $timeZone;
     private ?object $settings;
 
     public function __construct()
@@ -19,6 +22,10 @@ class Gallery extends BaseController
         $this->adminPrefix = $this->settings->get(
             'admin_prefix',
             env('ADMIN_DEFAULT_PREFIX')
+        );
+        $this->timeZone = $this->settings->get(
+            'time_zone',
+            env('DEFAULT_TIME_ZONE')
         );
     }
 
@@ -175,7 +182,8 @@ class Gallery extends BaseController
 
         $title = $this->request->getPost('title');
         $gallery_image = $this->request->getFile('gallery_image');
-        $project_select = $this->request->getFile('project_Select');
+        $project_select = $this->request->getPost('project_select');
+        // $project_select = intval($this->request->getPost('project_Select'));
 
         $validation = \Config\Services::validation();
 
@@ -183,6 +191,10 @@ class Gallery extends BaseController
             'title' => 'required|min_length[3]|max_length[255]',
             'gallery_image' => 'uploaded[gallery_image]|is_image[gallery_image]|mime_in[gallery_image,image/jpg,image/jpeg,image/png]|max_size[gallery_image,4096]',
         ];
+
+        if ($project_select != 0) {
+            $rules['project_select'] = 'is_exist[projects.id]';
+        }
 
         if (!$this->validate($rules)) {
             // If validation fails, redirect back with input and errors
@@ -219,10 +231,11 @@ class Gallery extends BaseController
         $galleryID = $galleryModel->getInsertID();
 
         $projectModel = new Project();
-        if ($project_select !== 'none' && $projectModel->find($project_select)) {
+        if ($project_select != 0 && $projectModel->find($project_select)) {
+            echo 000000000;
             $galleryModel->addProject($galleryID, $project_select);
+            return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $project_select));
         }
-
 
         return redirect()->to(site_url($this->adminPrefix . '/gallery'));
     }
@@ -264,9 +277,12 @@ class Gallery extends BaseController
             return redirect()->to(site_url($this->adminPrefix . '/gallery/trash'));
         }
 
+        $tz = new DateTimeZone($this->timeZone);
+        $nowTeh = new DateTime('now', $tz);
+        $timestamp = $nowTeh->format('Y-m-d H:i:s');
         $galleryModel->update($gallery['id'], [
             'on_delete' => true,
-            'deleted_at' => date("Y-m-d H:i:s", time())
+            'deleted_at' => $timestamp
         ]);
 
 
@@ -295,7 +311,7 @@ class Gallery extends BaseController
             $gallery = $galleryMODEL->find($id);
             $projectModel = new Project();
             $projects = $projectModel->where('on_delete', false)->findAll();
-            $projectID = $galleryMODEL->getProjects($gallery['id']);
+            $projectID = $galleryMODEL->getProjects($gallery['id'])[0]['id'];
 
             $data = [
                 'meta_title' => 'Edit Gallery Image',
@@ -316,7 +332,7 @@ class Gallery extends BaseController
         $gallery_id = $this->request->getPost('gallery_id');
         $title = $this->request->getPost('title');
         $gallery_image = $this->request->getFile('gallery_image');
-        $project_select = $this->request->getPost('project_select');
+        $project_select = intval($this->request->getPost('project_select'));
 
         $validation = \Config\Services::validation();
 
@@ -326,8 +342,8 @@ class Gallery extends BaseController
             'gallery_image' => 'permit_empty|is_image[gallery_image]|mime_in[gallery_image,image/jpg,image/jpeg,image/png]|max_size[gallery_image,4096]',
         ];
 
-        if ($project_select !== "none") {
-            $rules['project_Select'] = 'is_exist[projects.id]';
+        if ($project_select !== 0) {
+            $rules['project_select'] = 'is_exist[projects.id]';
         }
 
         if (!$this->validate($rules)) {
@@ -368,11 +384,27 @@ class Gallery extends BaseController
         $galleryMODEL->update($gallery['id'], $GMData);
 
         $projectModel = new Project();
-        if ($project_select !== 'none' && $projectModel->find($project_select)) {
+        if ($project_select !== 0 && $projectModel->find($project_select)) {
             $project = $galleryMODEL->getProjects($gallery['id']);
-            if ($project['id'] !== $project_select && $project['on_delete'] !== true) {
-                $galleryMODEL->removeProject($gallery['id'], $project['id']);
+            if (count($project) > 0) {
+                if ($project[0]['id'] !== $project_select && $project[0]['on_delete'] !== true) {
+                    $galleryMODEL->removeProject($gallery['id'], $project[0]['id']);
+                    $galleryMODEL->addProject($gallery['id'], $project_select);
+                    return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $project_select));
+                }
+            } else {
                 $galleryMODEL->addProject($gallery['id'], $project_select);
+                return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $project_select));
+            }
+        } else if ($project_select == 0) {
+            $project = $galleryMODEL->getProjects($gallery['id'])[0];
+            if (count($project) > 0) {
+                if ($project['on_delete'] !== true) {
+                    $galleryMODEL->removeProject($gallery['id'], $project['id']);
+                    return redirect()->to(site_url($this->adminPrefix . '/project/detail/' . $project['id']));
+                } else {
+                    return redirect()->to(site_url($this->adminPrefix . '/project/trash/detail/' . $project['id']));
+                }
             }
         }
 
