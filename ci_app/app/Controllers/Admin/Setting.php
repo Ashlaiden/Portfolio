@@ -218,14 +218,13 @@ class Setting extends BaseController
         }
 
         $password = $this->request->getPost('password');
-        if (!empty($password)) {
+        if (str_replace(' ', '', $password) !== '') {
             $data['password'] = password_hash($password, PASSWORD_DEFAULT);
+        } else {
+            $data['password'] = $admin['password'];
         }
-
-        // 👇 Insert into DB
+        
         $adminModel->update($adminID, $data);
-
-        // 👇 Redirect with success flash message
         return redirect()->to(site_url($this->adminPrefix . '/setting'));
 
     }
@@ -303,14 +302,14 @@ class Setting extends BaseController
         }
 
         $currentPassword = $this->request->getPost('currentpassword');
-        if (!password_verify($currentPassword, $admin['password'])) {
+        if (!password_verify($currentPassword, str_replace(' ', '', $$admin['password']))) {
             return redirect()->back()
                 ->withInput()
                 ->with('errors', ['Please enter Current Password Correctly!']);
         }
 
         $passwordInput = $this->request->getPost('password');
-        if (!empty($passwordInput)) {
+        if ((str_replace(' ', '', $passwordInput) != '')) {
             $data['password'] = password_hash($passwordInput, PASSWORD_DEFAULT);
         } else {
             unset($data['password']); // Don't touch the password if it's blank
