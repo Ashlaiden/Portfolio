@@ -148,15 +148,15 @@ class Auth extends BaseController
         $admin = $adminModel->where('email', $email)->first();
 
         if (!$admin) {
-            return redirect()->back()->with('error', 'Email not found.');
+            return redirect()->back()->with('errors', ['Email not found.']);
         }
 
         if (!password_verify($password, $admin['password'])) {
-            return redirect()->back()->with('error', 'Invalid password.');
+            return redirect()->back()->with('errors', ['Invalid password.']);
         }
 
         if ((int) $admin['status'] !== 1) {
-            return redirect()->back()->with('error', 'Account is inactive.');
+            return redirect()->back()->with('errors', ['Account is inactive.']);
         }
 
         if ($this->emailVerify) {
